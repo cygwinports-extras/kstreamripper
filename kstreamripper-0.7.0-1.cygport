@@ -1,0 +1,8 @@
+inherit kde4
+
+DESCRIPTION="KDE frontend for StreamRipper audio stream recorder"
+HOMEPAGE="http://kstreamripper.sourceforge.net/"
+SRC_URI="mirror://sourceforge/kstreamripper/${P}.tar.bz2"
+SRC_DIR=${PN}
+
+PATCH_URI="0.7.0-find-libproxy.patch"

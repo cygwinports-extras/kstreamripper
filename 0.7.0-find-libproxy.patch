@@ -1,0 +1,11 @@
+--- origsrc/kstreamripper/cmake/libproxy-config.cmake	2009-10-04 06:26:51.000000000 -0500
++++ src/kstreamripper/cmake/libproxy-config.cmake	2010-05-13 23:13:57.412240000 -0500
+@@ -13,7 +13,7 @@ INCLUDE(CheckLibraryExists)
+ 
+ FIND_PATH(LIBPROXY_INCLUDE_DIR proxy.h )
+ 
+-FIND_LIBRARY(LIBPROXY_LIBRARIES NAMES libproxy libproxy.so libproxy.so.0 libproxy.so.0.0 libproxy.so.0.0.0 )
++FIND_LIBRARY(LIBPROXY_LIBRARIES NAMES proxy)
+ 
+ IF (LIBPROXY_INCLUDE_DIR AND LIBPROXY_LIBRARIES)
+    SET(LIBPROXY_FOUND TRUE)
