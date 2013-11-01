@@ -1,0 +1,19 @@
+inherit kde4
+
+NAME="kstreamripper"
+VERSION=0.7.100
+RELEASE=1
+CATEGORY="Audio"
+REQUIRES="streamripper"
+SUMMARY="KDE frontend for streamripper audio stream recorder"
+DESCRIPTION="KStreamRipper is a program for recording Internet radios and other
+streams. For streams that provide information about the song title, it can
+split the stream and create an own file for each track - with a corresponding
+file name and corresponding metadata. KStreamRipper is based on Streamripper
+and provides a well-arranged user interface for its features. Like Streamripper,
+it accepts MP3, AAC and OGG streams from Shoutcast-servers and Icecast-servers."
+HOMEPAGE="http://kstreamripper.sourceforge.net/"
+SRC_URI="mirror://sourceforge/kstreamripper/${NAME}-${VERSION}.tar.bz2"
+SRC_DIR=${NAME}
+
+PATCH_URI="0.7.0-find-libproxy.patch"
